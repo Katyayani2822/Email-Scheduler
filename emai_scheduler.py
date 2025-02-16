@@ -1,6 +1,6 @@
 _author_ = 'Katyayani'
 _credits_ = 'Katyayani'
-_email_ = 'bpyadav0510@gmail.com'
+_email_ = 'katyayani05102005@gmail.com'
 
 import smtplib
 import datetime as dt
