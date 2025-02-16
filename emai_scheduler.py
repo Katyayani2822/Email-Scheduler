@@ -1,18 +1,22 @@
 _author_ = 'Katyayani'
 _credits_ = 'Katyayani'
-_date_ = "05-10-2022"
 _email_ = 'bpyadav0510@gmail.com'
 
 import smtplib
 import datetime as dt
 import time
+import getpass
+import warnings
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+
+# Suppress warnings
+warnings.filterwarnings("ignore")
 
 # Input email credentials and message details
 sender_email = input("Enter sender's email address: ")
 receiver_email = input("Enter receiver's email address: ")
-password = input("Enter your email app password: ")  # Use App Password here
+password = getpass.getpass("Enter your email app password: ")  # Use App Password here
 port = 587
 smtp_server = "smtp.gmail.com"
 
